@@ -3,8 +3,10 @@ title: "a0_practice"
 author: "Jean Clipperton"
 date: "`r Sys.Date()`" # 2025-10-10 
 output: 
+  md_document:
+    variant: gfm
   html_document:
-    theme: spacelab
+    theme: readable
 ---
 
 ```{r setup, include=FALSE}
