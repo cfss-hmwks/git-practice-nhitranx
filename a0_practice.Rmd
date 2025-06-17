@@ -1,7 +1,7 @@
 ---
 title: "a0_practice"
 author: "Jean Clipperton"
-date: "`r Sys.Date()`"
+date: "`r Sys.Date()`" # 2025-10-10 
 output: 
   html_document:
     theme: spacelab
@@ -38,6 +38,7 @@ Here, we're going to use tidyverse (which has ggplot2)
 
 ```{r}
 library(tidyverse)
+View(mtcars)
 ggplot(mtcars)+ 
        geom_point(aes(x = mpg, y = wt, 
                       color = factor(cyl),
@@ -45,7 +46,7 @@ ggplot(mtcars)+
                       size = hp))+ 
                       #label = rownames(mtcars), check_overlap = TRUE) +
   theme_bw() +
-  scale_color_manual(values = c("black", "gray", "blue") ) +
+  scale_color_manual(values = c("black", "gray", "maroon") ) +
   labs(title = "Car MPG vs weight", 
        x = 'Miles per gallon',
        y = 'Car weight',
